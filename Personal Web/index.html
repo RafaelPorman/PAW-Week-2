@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f5">
+  <meta name="description" content="Halaman personal untuk memperkenalkan profil, informasi akademik, dan media sosial.">
+  <title>Personal Web | Rafael Porman</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#beranda" aria-label="Personal Web, kembali ke beranda">
+        <span class="wordmark-mark" aria-hidden="true">P</span> PERSONAL WEB
+      </a>
+      <span class="header-note">HALAMAN PERKENALAN</span>
+    </header>
+
+    <section class="profile-card" id="beranda" aria-labelledby="profile-name">
+      <div class="card-topline">
+        <span class="eyebrow"><span class="status-dot"></span> TENTANG SAYA</span>
+        <span class="card-index">01 / PROFIL</span>
+      </div>
+      <div class="profile-content">
+        <picture class="portrait">
+          <img src="assets/gw.jpeg" alt="Foto profil Nama Anda" width="160" height="160">
+        </picture>
+        <p class="intro-label">Halo, saya</p>
+        <h1 id="profile-name">Rafael Porman</h1>
+        <p class="profile-summary">Selalu ingin belajar, bertumbuh, dan berkembang.</p>
+        <nav class="social-links" aria-label="Tautan media sosial">
+          <a class="social-link" href="https://github.com/RafaelPorman" target="_blank" rel="noopener noreferrer" aria-label="GitHub (ganti dengan akun Anda)" title="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.54v-2.1c-3.1.68-3.75-1.32-3.75-1.32-.5-1.3-1.24-1.65-1.24-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.71 2.61 1.22 3.24.93.1-.73.39-1.22.71-1.5-2.47-.28-5.07-1.23-5.07-5.5 0-1.22.43-2.21 1.16-2.99-.12-.28-.5-1.42.11-2.95 0 0 .95-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.1-1.43 3.05-1.14 3.05-1.14.61 1.53.23 2.67.11 2.95.72.78 1.16 1.77 1.16 2.99 0 4.28-2.6 5.22-5.08 5.49.4.35.76 1.02.76 2.06v3.12c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/rafaelporman/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (ganti dengan akun Anda)" title="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="icon-dot" cx="17.5" cy="6.8" r="1"/></svg>
+            <span>Instagram</span>
+          </a>
+          <a class="social-link" href="https://www.linkedin.com/in/rafaelporman/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (ganti dengan akun Anda)" title="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 8.5H2.4V21h2.8V8.5ZM3.8 2a1.7 1.7 0 1 0 0 3.4 1.7 1.7 0 0 0 0-3.4ZM21.6 13.8c0-3.76-2-5.5-4.67-5.5a4.03 4.03 0 0 0-3.63 2v-1.8h-2.8V21h2.8v-6.2c0-1.63.31-3.2 2.32-3.2 1.98 0 2 1.85 2 3.3V21h2.8l1.18-7.2Z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a class="social-link" href="mailto:rafaelpormann@gmail.com" aria-label="Kirim email (ganti dengan email Anda)" title="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
+            <span>Email</span>
+          </a>
+        </nav>
+      </div>
+      <div class="profile-footer">
+        <span>KONTAK SAYA</span><span class="footer-arrow" aria-hidden="true">↖</span>
+      </div>
+    </section>
+
+    <section class="details-grid" aria-label="Informasi profil">
+      <article class="info-panel" aria-labelledby="academic-title">
+        <div class="panel-heading">
+          <div><p class="eyebrow">RINGKASAN</p><h2 id="academic-title">Informasi Akademik</h2></div>
+          <span class="panel-number">02</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <caption class="visually-hidden">Data akademik Nama Anda</caption>
+            <tbody>
+              <tr><th scope="row">Nama</th><td>Rafael Porman Avshalom Lumban Batu</td></tr>
+              <tr><th scope="row">NIM</th><td>102042500214</td></tr>
+              <tr><th scope="row">Fakultas</th><td>Fakultas Rekayasa Industri</td></tr>
+              <tr><th scope="row">Program Studi</th><td>Sistem Informasi</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <article class="info-panel" aria-labelledby="time-title">
+        <div class="panel-heading">
+          <div><p class="eyebrow">WAKTU SAAT INI</p><h2 id="time-title">Waktu Lokal</h2></div>
+          <span class="panel-number">03</span>
+        </div>
+        <p class="clock" id="clock" aria-label="Waktu saat ini">--:--:--</p>
+        <p class="date" id="date">Memuat tanggal...</p>
+        <p class="time-zone">WIB · Waktu Indonesia Barat</p>
+      </article>
+    </section>
+
+    <footer class="site-footer">
+      <span>DIBUAT DENGAN SEMANGAT wkwk</span>
+      <span>© <span id="year">
+    </footer>
+  </main>
+</body>
+</html>

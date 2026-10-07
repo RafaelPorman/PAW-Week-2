@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --dark: #172b2b;
+  --muted: #788381;
+  --line: #e7ece9;
+  --white: #fff;
+  --page: #f4f6f5;
+  font-family: "DM Sans", sans-serif;
+  color: var(--dark);
+  background: var(--page);
+}
+
+* { box-sizing: border-box; }
+body { min-width: 320px; min-height: 100vh; margin: 0; padding: 0 28px; }
+a { color: inherit; text-decoration: none; }
+.page-shell { width: min(100%, 1032px); margin: 0 auto; }
+
+.site-header, .card-topline, .profile-footer, .panel-heading, .site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-header { height: 88px; }
+.wordmark { display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 700; letter-spacing: 2px; }
+.wordmark-mark { display: grid; width: 30px; height: 30px; place-items: center; border-radius: 9px; background: var(--dark); color: #d6f36a; }
+.header-note, .eyebrow, .card-index, .profile-footer, .site-footer, .time-zone { font-size: 10px; font-weight: 700; letter-spacing: 1.3px; }
+.header-note, .card-index, .panel-number, .site-footer { color: var(--muted); }
+
+.profile-card, .info-panel { border: 1px solid var(--line); background: var(--white); }
+.profile-card { overflow: hidden; border-radius: 18px; }
+.card-topline { padding: 22px 28px; border-bottom: 1px solid var(--line); }
+.eyebrow { margin: 0; color: #687674; }
+.status-dot { display: inline-block; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%; background: #87b945; }
+.profile-content { display: flex; flex-direction: column; align-items: center; padding: 42px 22px 38px; text-align: center; }
+.portrait { width: 118px; height: 118px; margin-bottom: 23px; overflow: hidden; border: 5px solid #f0f4ed; border-radius: 50%; background: #e4eae2; }
+.portrait img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.intro-label { margin: 0 0 4px; color: var(--muted); font-size: 14px; }
+
+h1, h2 { margin: 0; font-family: "Manrope", sans-serif; color: var(--dark); }
+h1 { font-size: clamp(32px, 5vw, 46px); font-weight: 800; }
+.profile-summary { max-width: 430px; margin: 12px 0 25px; color: #6c7875; font-size: 14px; line-height: 1.7; }
+.social-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+.social-link { display: flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 13px; border: 1px solid var(--line); border-radius: 24px; background: var(--white); font-size: 12px; font-weight: 600; }
+.social-link:hover { background: #f8faf5; }
+.social-link:focus-visible, .wordmark:focus-visible { outline: 2px solid #93b23e; outline-offset: 3px; }
+.social-link svg { width: 15px; height: 15px; fill: currentColor; stroke: currentColor; stroke-width: 1.8px; }
+.social-link:nth-child(2) svg { fill: none; }
+.profile-footer { padding: 14px 28px; border-top: 1px solid var(--line); color: var(--muted); }
+.footer-arrow { color: var(--dark); font-size: 16px; }
+
+.details-grid { display: grid; grid-template-columns: 1.35fr .9fr; gap: 18px; margin-top: 18px; }
+.info-panel { min-width: 0; padding: 25px 26px; border-radius: 16px; }
+.panel-heading { align-items: flex-start; margin-bottom: 20px; }
+.panel-heading .eyebrow { margin-bottom: 7px; }
+h2 { font-size: 19px; }
+.panel-number { font-size: 11px; font-weight: 700; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; font-size: 12px; }
+th, td { padding: 11px 0; border-top: 1px solid var(--line); }
+th { width: 42%; color: var(--muted); font-weight: 500; }
+td { font-weight: 600; }
+.clock { margin: 24px 0 1px; font-family: "Manrope", sans-serif; font-size: clamp(36px, 6vw, 48px); font-weight: 700; font-variant-numeric: tabular-nums; }
+.date { margin: 3px 0 16px; color: #6c7875; font-size: 13px; }
+.time-zone { display: inline-block; margin: 0; padding: 8px 11px; border-radius: 7px; background: #f1f5e8; color: #60732e; font-size: 9px; }
+.site-footer { gap: 16px; padding: 24px 2px 30px; font-size: 9px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+
+@media (max-width: 620px) {
+  body { padding: 0 16px; }
+  .site-header { height: 72px; }
+  .header-note { font-size: 8px; }
+  .card-topline { padding: 18px 19px; }
+  .profile-content { padding: 34px 18px 31px; }
+  .profile-footer { padding: 14px 19px; }
+  .details-grid { grid-template-columns: 1fr; gap: 12px; margin-top: 12px; }
+  .info-panel { padding: 22px 20px; }
+  .clock { margin-top: 12px; }
+}
